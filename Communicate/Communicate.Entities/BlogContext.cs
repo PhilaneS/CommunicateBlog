@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 
 namespace Communicate.Entities
 {
-    public class CommunicatedBlogContext : DbContext
+    public class BlogContext : DbContext
     {
-        public CommunicatedBlogContext(DbContextOptions<CommunicatedBlogContext> options)
+        public BlogContext(DbContextOptions<BlogContext> options)
             : base(options)
         {
 
         }
-        public DbSet<Post> Posts { get; set; }
-        public DbSet<Category> Categories { get; set; }
-        public DbSet<PostCategory> PostCategories { get; set; }
-        public DbSet<Tag> Tags { get; set; }
-        public DbSet<PostTag> PostTags { get; set; }
-        public DbSet<Comment> Comments { get; set; }
+        public DbSet<Post> Post { get; set; }
+        public DbSet<Category> Category { get; set; }
+        public DbSet<PostCategory> PostCategory { get; set; }
+        public DbSet<Tag> Tag { get; set; }
+        public DbSet<PostTag> PostTag { get; set; }
+        public DbSet<Comment> Comment { get; set; }
 
     }
 }
